@@ -7,8 +7,17 @@ class Pokemon:
         self._nature = nature
         self._niveau = niveau
 
+    def __init__(self):
+        self._nom = 'pikachu'
+        self._type = 'electrique'
+        self._nature = 'docile'
+        self._niveau = 10
+
+
     def monte_niveau(self):
+        print("le niveau actuel est de : ", self._niveau)
         self._niveau += 1
+        print("le nouveau est de : ", self._niveau)
 
     def _get_nom(self):
         return self._nom
@@ -16,4 +25,11 @@ class Pokemon:
     def _set_nom(self, nouveau_nom: str):
         self._nom = nouveau_nom
 
+    def _get_niveau(self):
+        return self._niveau
+
+    def _set_niveau(self, nouveau_niveau: str):
+        self._niveau = nouveau_niveau
+
     nom = property(_get_nom, _set_nom)
+    niveau = property(_get_niveau, _set_niveau)
