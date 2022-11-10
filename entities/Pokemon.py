@@ -31,5 +31,20 @@ class Pokemon:
     def _set_niveau(self, nouveau_niveau: str):
         self._niveau = nouveau_niveau
 
+    def _get_type(self):
+        return self._type
+
+    def _set_type(self, nouveau_type: str):
+        self._type = nouveau_type
+
+    def _get_nature(self):
+        return self._nature
+
+    def _set_nature(self, nouveau_nature: str):
+        self._nature = nouveau_nature
+
     nom = property(_get_nom, _set_nom)
     niveau = property(_get_niveau, _set_niveau)
+    type = property(_get_type, _set_type)
+    nature = property(_get_nature, _set_nature)
+
