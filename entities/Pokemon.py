@@ -13,6 +13,12 @@ class Pokemon:
         self._nature = 'docile'
         self._niveau = 10
 
+    def __init__(self, name : str):
+        self._nom = name
+        self._type = 'electrique'
+        self._nature = 'docile'
+        self._niveau = 10
+
 
     def monte_niveau(self):
         print("le niveau actuel est de : ", self._niveau)

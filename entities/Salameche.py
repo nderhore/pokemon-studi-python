@@ -12,6 +12,10 @@ class Salameche(Pokemon):
         super().__init__()
         self._list_capacities = capacites
 
+    def __init__(self, name : str,capacites: list):
+        super().__init__(name)
+        self._list_capacities = capacites
+
     def _get_list_capacities(self) -> list:
         return self._list_capacities
 
